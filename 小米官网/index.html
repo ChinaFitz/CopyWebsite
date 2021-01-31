@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 引入外部CSS样式表 -->
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <!-- 引入iconfont -->
+    <link rel="stylesheet" href="./assets/shopcar/iconfont.css">
+    <link rel="stylesheet" href="./assets/mirror/iconfont.css">
+    <link rel="stylesheet" href="./assets/arrow/iconfont.css">
+    <!-- icon图标 -->
+    <link rel="icon" href="./assets/favicon.ico">
+    <title>小米商城</title>
+
+</head>
+
+<body>
+    <!-- 网站头部: 导航栏及其上面的小米金融广告 -->
+    <header>
+        <!-- header容器 -->
+        <div id="header">
+            <!-- 小米金融广告容器 -->
+            <div id="miFinancialContainer">
+                <a href="javascript:;">
+                    <img src="./assets/miFinancial.png" alt="小米金融广告">
+                </a>
+            </div>
+            <!-- 导航栏 -->
+            <nav>
+                <!-- 导航栏容器 -->
+                <div id="navContainer">
+                    <!-- 左侧导航栏 -->
+                    <div id="nav-left">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" style="width: 48px;height: 40px">小米商城</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            
+                            <li>
+                                <a href="javascript:;" style="width: 28.34px;height: 40px">MIUI</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 20.34px;height: 40px">IoT</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 37px;height: 40px">云服务</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 48px;height: 40px">天星科技</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 24px;height: 40px">有品</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 75px;height: 40px">小爱开放平台</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 48px;height: 40px">企业团购</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 48px;height: 40px">资质证照</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 48px;height: 40px">协议规则</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li style="position: relative;">
+                                <a href="javascript:;" style="width: 48.03px;height: 40px">
+                                    下载app
+                                    <!-- 下拉框三角形 -->
+                                    <div id="trigle"></div>
+                                    <!-- 下拉框容器 -->
+                                    <div id="downloadAppContainer">
+                                        
+                                        <span>
+                                            <img src="./assets/appcode.png" alt="APP二维码">
+                                            小米商城APP
+                                        </span>
+                                    </div>
+                                </a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 54px;height: 40px">智能生活</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" style="width: 82.06px;height: 40px">Select Location</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 右侧导航栏 -->
+                    <div id="nav-right">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">登录</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">注册</a>
+                                <span class="delimiter">|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">消息通知</a>
+                            </li>
+                        </ul>
+                        <!-- 购物车 -->
+                        <a href="javascript:;" id="shopCarContainer">
+                            <span><i class="shopcar">&#xe64d;</i>购物车(0)</span>
+                            <!-- 购物车下拉框 -->
+                            <div id="shopCarMenu">
+                                购物车中还没有商品，赶紧选购吧！
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- 网站主题： 包含各种产品信息等 -->
+    <main>
+        <div id="main">
+            <!-- 主体中的导航栏 -->
+            <div id="navBarContainer">
+                <!-- logo图标 -->
+                <div id="logoContainer">
+                    <a href="javascript:;" id="logo">
+                        <img src="./assets/mi-logo.png" alt="logo">
+                        <img src="./assets/mi-home.png" alt="logo">
+                    </a>
+                </div>
+                <!-- 主体中的导航条 -->
+                <div id="navBarTainer">
+                    <ul>
+                        <li>
+                            <a href="javascript:;" style="width: 84px;height: 88px;">小米手机</a>
+                            <!-- 导航条下拉框 -->
+                            <div id="navBarDroplayer"></div>
+                        </li>
+                        <li><a href="javascript:;" style="width: 102.69px;height: 88px;">Readmi&nbsp;红米</a></li>
+                        <li><a href="javascript:;" style="width: 52px;height: 88px;">电视</a></li>
+                        <li><a href="javascript:;" style="width: 68px;height: 88px;">笔记本</a></li>
+                        <li><a href="javascript:;" style="width: 52px;height: 88px;">家电</a></li>
+                        <li><a href="javascript:;" style="width: 68px;height: 88px;">路由器</a></li>
+                        <li><a href="javascript:;" style="width: 84px;height: 88px;">智能硬件</a></li>
+                        <li><a href="javascript:;" style="width: 52px;height: 88px;">服务</a></li>
+                        <li><a href="javascript:;" style="width: 52px;height: 88px;">社区</a></li>
+                    </ul>
+                </div>
+                <!-- 搜索框 -->
+                <div id="searchBarCotainer">
+                    <input type="text" id="search" name="search" placeholder="我是快乐miBoy">
+                    <div id="searchButton" class="mirror"><i>&#xe617;</i></div>
+                    <!-- 搜索框下拉框 -->
+                    <div id="dropdown">
+                        <ul>
+                            <li><a href="javascript:;">小米11</a></li>
+                            <li><a href="javascript:;">笔记本</a></li>
+                            <li><a href="javascript:;">Nova 10</a></li>
+                            <li><a href="javascript:;">加湿器</a></li>
+                            <li><a href="javascript:;">小米10</a></li>
+                            <li><a href="javascript:;">耳机</a></li>
+                            <li><a href="javascript:;">全部商品</a></li>
+                            <li><a href="javascript:;">洗衣机</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 中间轮播图位置 -->
+                <div id="carouselContainer">
+                    <div id="carouselNavContainer">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">手机&nbsp;电话卡<i class="arrow">&#xe606;</i></a>
+                                <!-- 遮盖层 -->
+                                <div id="carouselNavCoverlayer">
+                                    
+                                    <ul id="phoneset">
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                    </ul>
+
+                                    <ul id="phoneset">
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                    </ul>
+
+                                    <ul id="phoneset">
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                    </ul>
+
+                                    <ul id="phoneset">
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                        <li><a href="javascript:;"><img src="./assets/mi11.webp" alt="小米11">小米11</a></li>
+                                    </ul>
+
+
+                                </div>
+                            </li>
+                            <li><a href="javascript:;">电视&nbsp;盒子<i class="arrow">&#xe606;</i></a></li>
+                            <li><a href="javascript:;">笔记本&nbsp;显示器<i class="arrow">&#xe606;</i></a></li>
+                            <li><a href="javascript:;">家电&nbsp;插线板<i class="arrow">&#xe606;</i></a></li>
+                            <li><a href="javascript:;">出行&nbsp;穿戴<i class="arrow">&#xe606;</i></a></li>
+                            <li><a href="javascript:;">智能&nbsp;路由器<i class="arrow">&#xe606;</i></a></li>
+                            <li><a href="javascript:;">电源&nbsp;配件<i class="arrow">&#xe606;</i></a></li>
+                            <li><a href="javascript:;">健康&nbsp;儿童<i class="arrow">&#xe606;</i></a></li>
+                            <li><a href="javascript:;">耳机&nbsp;音箱<i class="arrow">&#xe606;</i></a></li>
+                            <li><a href="javascript:;">生活&nbsp;箱包<i class="arrow">&#xe606;</i></a></li>
+                        </ul>
+                    </div>
+                    <div id="carouselSelf">
+                        <!-- arrow icon -->
+                        <div class="arrow">&#xe61e;</div>
+                        <div class="arrow">&#xe61e;</div>
+                    </div>
+                </div>
+
+                <!-- 重难点: 右侧小条 -->
+                <div id="rightBar">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- 网页页脚 -->
+    <footer></footer>
+</body>
+
+</html>

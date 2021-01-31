@@ -1,0 +1,16 @@
+{
+  "id": "2357961",
+  "name": "练习用",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5394536",
+      "name": "shop-car",
+      "font_class": "shop-car",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    }
+  ]
+}

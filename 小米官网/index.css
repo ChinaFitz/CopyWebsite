@@ -1,0 +1,565 @@
+/* 设置整个页面的最小宽度 */
+body{
+    min-width: 1226px;
+    /* 小米官网使用的字体样式 */
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    /* 删除 */
+    height: 5000px;
+}
+
+/* 去除全局的默认超链接样式 */
+a{
+    text-decoration: none;
+}
+
+
+#header{
+    width: 1905px;
+    height: 160px;
+    /* 等等删除 */
+    background-color: #bfa;
+}
+
+/* 小米金融广告样式 */
+#miFinancialContainer img{
+    width: 1905px;
+    height: 120px;
+}
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(51, 51, 51);
+}
+
+/* 导航栏总容器 */
+#navContainer{
+    width: 1228px;
+    height: 40px;
+    /* margin-left: 350px; */
+    margin: 0 auto;
+}
+
+/* 左侧导航栏 */
+#nav-left{
+    width: 795px;
+    height: 40px;
+    float: left;
+}
+
+#nav-left ul > li{
+    float: left;
+    line-height: 40px;
+    text-align: center;
+}
+
+#nav-left ul .delimiter{
+    margin: 0 3.6px;
+    color: #424242;
+    margin: 0 3.6px;
+    line-height: 40px;
+    color: rgb(122, 97, 97);
+}
+
+#nav-left ul a{
+    text-decoration: none;
+    line-height: 40px;
+    color: #b0b0b0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+#nav-left ul a:hover:not(#downloadAppContainer span){
+    color: #fff;
+}
+
+/* 下载app的相关样式 */
+
+/* 绘制下拉框三角形 */
+#trigle{
+    width: 0;
+    height: 0;
+    border-color: transparent transparent #fff transparent;
+    border-width: 8px;
+    border-style: solid;
+    position: absolute;
+    left: 18px;
+    top: 24px;
+    visibility: hidden;
+}
+
+#nav-left ul li:nth-child(11)>a:hover #trigle{
+    visibility: visible;
+}
+
+/* 下拉框 */
+#downloadAppContainer{
+    width: 124px;
+    height: 0;
+    background-color: #fff;
+    position: absolute;
+    left: -38px;
+    top: 40px;
+    box-shadow: 0 1px 5px #aaa;
+    overflow: hidden;   /* 修复隐藏时内容仍然显示的bug */
+    z-index: 3;
+}
+
+#downloadAppContainer img{
+    display: block;
+    width: 88px;
+    height: 88px;
+    margin: 20px auto 0 auto;
+}
+
+#downloadAppContainer span{
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+#nav-left ul li:nth-child(11)>a:hover #downloadAppContainer{
+    transition-property: height;
+    height: 148px;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+/* 右侧导航栏 */
+#nav-right{
+    height: 40px;
+    float: right;
+}
+
+#nav-right ul{
+    float: left;
+}
+
+#nav-right li{
+    float: left;
+    width: 36px;
+    height: 40px;
+}
+
+#nav-right li:nth-child(3){
+    width: 56px;
+}
+
+#nav-right li > a{
+    text-decoration: none;
+    color: #aaa;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+#nav-right li > a:hover{
+    color: #fff;
+}
+
+/* 购物车 */
+#shopCarContainer{
+    width: 120px;
+    height: 40px;
+    float: right;
+    background-color: red;
+    color: #b0b0b0;
+    background-color: #424242;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 18px;
+    position: relative;
+}
+
+#shopCarContainer:hover{
+    color: #ff6700;
+    background-color: #fff;
+}
+/* 定义icon样式 */
+.shopcar {
+    font-family: "shopcar" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 3px;
+}
+
+/* 购物车下拉框 */
+#shopCarMenu{
+    z-index: 3;
+    width: 317px;
+    height: 0;
+    background-color: #fff;
+    position: absolute;
+    left: -197px;
+    top: 40px;
+    color: #424242;
+    font-size: 12px;
+    line-height: 100px;
+    text-align: center;
+    box-shadow: 0 8px 10px rgb(0 0 0 / 15%);
+    overflow: hidden;   /* 不加的话动画会有bug */
+}
+/* 购物车下拉框过渡效果 */
+#shopCarContainer:hover #shopCarMenu{
+    color: #424242;
+    transition-property: height;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    height: 100px;
+}
+
+/* 网站主体 */
+#main{
+    width: 1228px;
+    margin-left: 350px;
+
+}
+
+#navBarContainer{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+}
+
+/* 小米logo */
+#logoContainer{
+    width: 49px;
+    height: 49px;
+    background-color: #ff6700;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    overflow: hidden;   /* 用于图标过渡效果 */
+
+}
+
+#logo{
+    display: inline-block;
+    width: 98px;
+    height: 49px;
+    background-color: #ff6700;
+    transform: translateX(-49px);
+}
+
+#logo > img{
+    float: right;
+}
+
+/* 图标过渡效果 */
+#logoContainer:hover #logo{
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+    transform: translateX(0);
+}
+
+/* 主体中的导航条 */
+#navBarTainer{
+    width: 850px;
+    height: 100px;
+    margin-left: 246px;
+}
+
+#navBarTainer ul > li{
+    float: left;
+}
+
+#navBarTainer ul a {
+    display: inline-block;
+    line-height: 100px;
+    font-size: 16px;
+    color: #333;
+}
+
+#navBarTainer ul a:hover{
+    color: #ff6700;
+}
+
+/* 导航条下拉框 */
+#navBarDroplayer{
+    width: 1905px;
+    height: 0;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 260px;
+    z-index: 3;
+    overflow: hidden;
+}
+/* 下拉过渡效果 */
+#navBarTainer ul a:hover + #navBarDroplayer{
+    transition: all ease .3s;
+    height: 230px;
+}
+
+/* 搜索框 */
+#searchBarCotainer{
+    width: 295px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+#searchBarCotainer:hover input,
+#searchBarCotainer:hover div:not(#dropdown){
+    border-color:rgba(0, 0, 0, .5);
+}
+
+#searchBarCotainer input{
+    width: 241px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    text-indent: 10px;
+    font-size: 13px;
+    padding: 0;
+    float: left;
+}
+
+
+#searchBarCotainer input:focus,
+#searchBarCotainer input:focus + #searchButton{
+    transition: all .1s ease;
+    border-color: #ff6700;
+
+}
+
+
+
+#searchButton{
+    width: 51px;
+    height: 48px;
+    float: left;
+    background-color: transparent;
+    border: 1px rgba(0, 0, 0, .2) solid;
+    text-align: center;
+    line-height: 48px;
+}
+
+/* 放大镜icon */
+.mirror{
+    font-family: "mirror" !important;
+    font-size: 25px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#searchButton:hover{
+    background-color: #ff6700;
+    transition-property: background-color;
+    transition-duration: .1s;
+    transition-timing-function: ease;
+}
+
+#searchButton:hover{
+    color: #fff;
+    transition-property: color;
+    transition-duration: .1s;
+    transition-timing-function: ease;
+}
+
+/* 搜索框下拉框 */
+#dropdown{
+    width: 241px;
+    height: 0;
+    border: 0 solid #ff6700;
+    border-top: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 3;
+}
+
+#dropdown a{
+    color: #333;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+#dropdown li:hover{
+    background-color: rgba(224, 224, 224, .3);
+}
+
+/* 搜索下拉框过渡效果 */
+#searchBarCotainer input:focus ~ #dropdown{
+    transition: height border-width .1s ease;
+    height: 240px;
+    border-width: 1px;
+}
+
+/* 中间轮播图位置 */
+#carouselContainer{
+    width: 1226px;
+    height: 460px;
+    position: relative;
+    /* 全局下鼠标指针都会是一个小手指 */
+    cursor: pointer;
+}
+
+#carouselNavContainer{
+    width: 234px;
+    height: 460px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: rgba(105, 101, 101, .6);
+    position: absolute;
+    z-index: 2;
+}
+
+#carouselNavContainer li:not(#phoneset li){
+    overflow: hidden;
+}
+
+#carouselNavContainer li:hover{
+    background-color: #ff6700;
+}
+
+#carouselNavContainer a{
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    width: 234px;
+    height: 42px;
+    padding-left: 30px;
+    line-height: 42px;
+    position: relative;
+}
+
+/* 箭头icon */
+@font-face {
+font-family: 'arrow';
+src: url('iconfont.eot');
+src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+    url('iconfont.woff2') format('woff2'),
+    url('iconfont.woff') format('woff'),
+    url('iconfont.ttf') format('truetype'),
+    url('iconfont.svg#iconfont') format('svg');
+}
+.arrow {
+    font-family: "arrow" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    right: 48px;
+    color: #e0e0e0;
+}
+
+/* 中间部分的遮盖层 */
+#carouselNavCoverlayer{
+    width: 0;
+    height: 460px;
+    position: absolute;
+    left: 234px;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0px 1px 18px rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* 遮盖层的过渡效果 */
+#carouselNavContainer li:hover #carouselNavCoverlayer{
+    width: 992px;
+}
+
+#carouselNavCoverlayer #phoneset{
+    height: 115px;
+}
+
+
+#carouselNavCoverlayer #phoneset > li{
+    float: left;
+    width: 225px;
+    height: 40px;
+    background-color: transparent;
+    padding: 18px 20px;
+    box-sizing: border-box;
+}
+
+#carouselNavCoverlayer #phoneset > li a{
+    color: #333;
+    transform: translate(10px, 1px);
+}
+
+#carouselNavCoverlayer #phoneset > li:hover a{
+    color: #ff6700;
+}
+
+/* 轮播图自身 */
+#carouselSelf{
+    width: 1226px;
+    height: 460px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('./assets/mi10.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-clip: border-box;
+    z-index: 1;
+}
+
+/* 轮播图的两个箭头按钮 */
+#carouselSelf .arrow{
+    width: 40px;
+    height: 70px;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    line-height: 70px;
+    text-align: center;
+}
+#carouselSelf .arrow:nth-child(1){
+    left: 234px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    transform: rotateZ(180deg);
+
+}
+#carouselSelf .arrow:nth-child(2){
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+#carouselSelf .arrow:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* 重难点: 右侧小条 */
+#rightBar{
+    width: 50px;
+    height: 350px;
+    position: absolute;
+    right: 50%;
+    top: 150px;
+    margin-right: -662px;
+    /* 此时的过度约束等式
+    left + margin-left + border-left + padding-left + width + padding-right + border-right + margin-right + right = 包含块的宽度
+    auto + 0 + 0 + 0 + 50px + 0 + 0 + 0 + 50% = 包含块的宽度
+    */
+    background-color: salmon;
+}

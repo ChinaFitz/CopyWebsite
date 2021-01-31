@@ -1,0 +1,23 @@
+{
+  "id": "2357961",
+  "name": "练习用",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8449796",
+      "name": "Icons_Tool Bar_Arrow Right",
+      "font_class": "Icons_ToolBar_ArrowRight",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "16741892",
+      "name": "icon_arrow right",
+      "font_class": "icon_arrowright",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}
